@@ -8,6 +8,7 @@ function NewRoom(props) {
   const [itemsVisible, setItemsVisible] = useState(true);
 
   const card = props.cardDetail;
+
   return (
     <>
       <div className={style.roomDetailContainer}>
@@ -63,10 +64,11 @@ function NewRoom(props) {
         <div className={style.footer}>
           <button
             onClick={() => {
+              console.log('🐗', props.setSheetVisible);
               props.setSheetVisible(false);
             }}
           >
-            <img src="/images/hand-peace.png" alt="" />
+            <img src="/images/hand-peace.png" alt="" /> Leave Quietly
           </button>
           <div>
             <button>
