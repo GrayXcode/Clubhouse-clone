@@ -37,10 +37,11 @@ a:hover {
 }
 
 .app_layout {
-  background-color: #f2f0e4;
+  background-color: #a8a48b;
   height: 100vh;
   width: 100%;
   position: relative;
   max-width: 500px;
   margin: auto;
+  overflow-y: hidden;
 }
