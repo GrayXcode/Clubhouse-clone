@@ -8,6 +8,8 @@ import AllowNotification from "./pages/AllowNotification";
 import AppLayout from "./pages/Layouts/AppLayout";
 import Home from "./pages/Home";
 import Explore from "./pages/Explore";
+import Profile from "./pages/Profile";
+
 function App() {
   return (
     <BrowserRouter>
@@ -21,11 +23,12 @@ function App() {
           </Switch>
         </PlanLayout>
       </Route>
-      <Route path={["/home", "/explore"]}>
+      <Route path={["/home", "/explore", "/profile"]}>
         <AppLayout>
           <Switch>
             <Route exact path="/home" component={Home} />
             <Route exact path="/explore" component={Explore} />
+            <Route exact path="/profile" component={Profile} />
           </Switch>
         </AppLayout>
       </Route>
