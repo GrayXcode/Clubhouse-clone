@@ -9,7 +9,7 @@ function BottomSheet(props) {
     <SwipeableBottomSheet
       open={props.sheetVisible}
       onChange={() => {
-        props.setSheetVisible(!props.sheetVisible);
+        props.setSheetVisible(props.sheetVisible);
         props.setItemsVisible(true);
       }}
       fullScreen={props.sheetTitle === "room detail" ? true : false}
